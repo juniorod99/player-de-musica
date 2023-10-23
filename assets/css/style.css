@@ -28,18 +28,27 @@ input[type="range"] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background: rgba(0, 0, 0, 0.5); */
   border-radius: 30px;
-  /* From https://css.glass */
   background: rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(7.7px);
   -webkit-backdrop-filter: blur(7.7px);
 }
 
-.album-imagem > img {
+.album-imagem {
   width: 350px;
+  height: 350px;
+  background-color: #3f5efb;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   border-radius: 5px;
+  /* object-fit: cover; */
+}
+
+.album-imagem img {
+  width: 350px;
+  height: 350px;
 }
 
 .conteudo {
@@ -52,16 +61,16 @@ input[type="range"] {
   color: #ffffff;
 }
 
-.musica-titulo {
+.musica-detalhes {
   text-align: center;
   color: #ffffff;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.musica-titulo h1 {
+.musica-detalhes h1 {
   font-size: 1.5rem;
 }
-.musica-titulo p {
+.musica-detalhes p {
   font-size: 1.2rem;
   color: #ccc;
   margin-top: 5px;
