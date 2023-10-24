@@ -46,6 +46,12 @@ const playlist = [
     artista: "Ariana Grande",
     musica: "./assets/musicas/Positions.mp3",
   },
+  {
+    img: "./assets/capa/GlimpseOfUs.jpg",
+    nome: "Glimpse of Us",
+    artista: "Joji",
+    musica: "./assets/musicas/Glimpse of Us.mp3",
+  },
 ];
 
 carregarMusica(musica_index);
